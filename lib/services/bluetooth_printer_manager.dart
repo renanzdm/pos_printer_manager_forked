@@ -13,17 +13,17 @@ import 'printer_manager.dart';
 /// Bluetooth Printer
 class BluetoothPrinterManager extends PrinterManager {
   late Generator generator;
-  late themal.BlueThermalPrinter bluetooth = themal.BlueThermalPrinter.instance;
-  late fblue.FlutterBlue flutterBlue = fblue.FlutterBlue.instance;
+  themal.BlueThermalPrinter bluetooth = themal.BlueThermalPrinter.instance;
+  fblue.FlutterBlue flutterBlue = fblue.FlutterBlue.instance;
   late fblue.BluetoothDevice fbdevice;
 
   BluetoothPrinterManager(
-    POSPrinter printer,
-    PaperSize paperSize,
-    CapabilityProfile profile, {
-    int spaceBetweenRows = 5,
-    int port: 9100,
-  }) {
+      POSPrinter printer,
+      PaperSize paperSize,
+      CapabilityProfile profile, {
+        int spaceBetweenRows = 5,
+        int port: 9100,
+      }) {
     super.printer = printer;
     super.address = printer.address ?? '';
     super.paperSize = paperSize;
@@ -43,8 +43,8 @@ class BluetoothPrinterManager extends PrinterManager {
             name: printer.name,
             remoteId: printer.address,
             type: proto.BluetoothDevice_Type.valueOf(printer.type)));
-        var connected = await flutterBlue.connectedDevices;
-        var index = connected.indexWhere((e) => e.id == fbdevice.id);
+        List<fblue.BluetoothDevice> connected = await flutterBlue.connectedDevices;
+        int? index = connected.indexWhere((e) => e.id == fbdevice.id);
         if (index < 0) await fbdevice.connect();
       } else if (Platform.isAndroid) {
         var device = themal.BluetoothDevice(printer.name, printer.address);
@@ -67,11 +67,11 @@ class BluetoothPrinterManager extends PrinterManager {
     return [
       ...results
           .map((e) => BluetoothPrinter(
-                id: e.address,
-                name: e.name,
-                address: e.address,
-                type: e.type,
-              ))
+        id: e.address,
+        name: e.name,
+        address: e.address,
+        type: e.type,
+      ))
           .toList()
     ];
   }
@@ -87,12 +87,28 @@ class BluetoothPrinterManager extends PrinterManager {
         if (isDisconnect) {
           await disconnect();
         }
-      } else if (Platform.isIOS) {
-        var services = (await fbdevice.discoverServices());
-        var service = services.firstWhere((e) => e.isPrimary);
-        var charactor =
-            service.characteristics.firstWhere((e) => e.properties.write);
-        await charactor.write(data, withoutResponse: true);
+      }else if (Platform.isIOS) {
+       fblue.BluetoothCharacteristic? printerService;
+        List<fblue.BluetoothService> services =
+        (await fbdevice.discoverServices());
+        for (var service in services) {
+          if (service.isPrimary) {
+            for (var character in service.characteristics) {
+              if (character.properties.write) {
+                printerService = character;
+              }
+            }
+          }
+        }
+        final len = data.length;
+        List<List<int>> chunks = [];
+        for (var i = 0; i < len; i += 100) {
+          var end = (i + 100 < len) ? i + 100 : len;
+          chunks.add(data.sublist(i, end));
+        }
+        for (var i = 0; i < chunks.length; i++) {
+          await printerService?.write(chunks[i]);
+        }
       }
     } catch (e) {
       print("Error : $e");

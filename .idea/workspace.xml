@@ -23,25 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24831e0f-5533-451e-97ca-aa5bc045e3e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/bluetooth_printer_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/bluetooth_printer_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/network_printer_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/network_printer_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/test/widget_test.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/bluetooth_printer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/bluetooth_printer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/network_printer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/network_printer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/pos_printer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/pos_printer.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/services/bluetooth_printer_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/bluetooth_printer_manager.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/bluetooth_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/bluetooth_service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/network_printer_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/network_printer_manager.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/network_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/network_service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/printer_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/printer_manager.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +42,6 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="true" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -99,26 +81,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1624466125301" />
-    <state x="812" y="204" key="FileChooserDialogImpl" timestamp="1624463557699">
+    <state x="812" y="204" key="FileChooserDialogImpl" timestamp="1624475419699">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="812" y="204" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1624463557699" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1624471435020">
+    <state x="812" y="204" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1624475419699" />
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1624471646795">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1624471435020" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1624471435020">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1624471646795" />
+    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1624471646795">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1624471435020" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1624471435019">
+    <state width="1875" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1624471646795" />
+    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1624471646795">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1624471435019" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1624471435020">
+    <state width="1875" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1624471646795" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1624471646795">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1624471435020" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1624471646795" />
     <state x="440" y="94" width="1185" height="711" key="SettingsEditor" timestamp="1624463560820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
