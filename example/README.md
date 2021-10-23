@@ -1,6 +1,6 @@
-# pos_printer_manager_example
+# example
 
-Demonstrates how to use the pos_printer_manager plugin.
+A new Flutter project.
 
 ## Getting Started
 
